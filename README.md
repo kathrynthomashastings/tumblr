@@ -8,7 +8,7 @@ Time spent: `<Number of hours spent>`
 
 #### Required
 
-- [ ] Tapping on Home, Search, Account, or Trending should show the respective screen and highlight the tab bar button.
+- [x] Tapping on Home, Search, Account, or Trending should show the respective screen and highlight the tab bar button.
 - [ ] Compose button should modally present the compose screen.
 
 #### Optional

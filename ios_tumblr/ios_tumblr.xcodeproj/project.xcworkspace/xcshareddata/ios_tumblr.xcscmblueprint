@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "297BA0A1A97ABD36A4947271A10913759DAC9F57",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "297BA0A1A97ABD36A4947271A10913759DAC9F57" : 9223372036854775807,
+    "402EAB2ECDA1AD433DD6D4D69C632CD6CDC5B922" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7FEC4F93-3B53-4287-9B12-BFFA3D460FD9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "297BA0A1A97ABD36A4947271A10913759DAC9F57" : "tumblr\/",
+    "402EAB2ECDA1AD433DD6D4D69C632CD6CDC5B922" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ios_tumblr",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios_tumblr\/ios_tumblr.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pictureelectric\/tumblr.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "297BA0A1A97ABD36A4947271A10913759DAC9F57"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pictureelectric\/hasticakes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "402EAB2ECDA1AD433DD6D4D69C632CD6CDC5B922"
+    }
+  ]
+}
