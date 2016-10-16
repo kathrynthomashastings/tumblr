@@ -54,51 +54,75 @@ class ComposeViewController: UIViewController {
         
         super.viewDidAppear(animated)
         
-        UIView.animate(withDuration: 00.2, animations: {
-            
+        UIView.animate(withDuration: 00.3) {
             self.photoImageView.center.y = 210
-            
-        }) { (Bool) in
-            
-            UIView.animate(withDuration: 00.25, animations: {
-            
-                self.chatImageView.center.y = 350
-            
-            }) { (Bool) in
-            
-                UIView.animate(withDuration: 00.35, animations: {
-                
-                    self.quoteImageView.center.y = 210
-                    
-                }) { (Bool) in
-                    
-                    UIView.animate(withDuration: 00.4, animations: {
-                        
-                        self.textImageView.center.y = 210
-                        
-                    }) { (Bool) in
-                        
-                        UIView.animate(withDuration: 00.5, animations: {
-                            
-                            self.linkImageView.center.y = 350
-                            
-                        }) { (Bool) in
-                            
-                            UIView.animate(withDuration: 00.55, animations: {
-                                
-                                self.videoImageView.center.y = 350
-                                
-                            })
-                        
-                        }
-                    
-                    }
-                    
-                }
-                
-            }
-                    
         }
+        
+        UIView.animate(withDuration: 00.23, delay: 0.35, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+            self.chatImageView.center.y = 350
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 00.3, delay: 0.4, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+            self.quoteImageView.center.y = 210
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 00.3, delay: 0.55, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+            self.textImageView.center.y = 210
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 00.3, delay: 0.6, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+            self.linkImageView.center.y = 350
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 00.3, delay: 0.8, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+            self.videoImageView.center.y = 350
+        }, completion: nil)
+
+//        UIView.animate(withDuration: 00.2, animations: {
+//            
+//            self.photoImageView.center.y = 210
+//            
+//        }) { (Bool) in
+//            
+//            UIView.animate(withDuration: 00.25, animations: {
+//            
+//                self.chatImageView.center.y = 350
+//            
+//            }) { (Bool) in
+//            
+//                UIView.animate(withDuration: 00.35, animations: {
+//                
+//                    self.quoteImageView.center.y = 210
+//                    
+//                }) { (Bool) in
+//                    
+//                    UIView.animate(withDuration: 00.4, animations: {
+//                        
+//                        self.textImageView.center.y = 210
+//                        
+//                    }) { (Bool) in
+//                        
+//                        UIView.animate(withDuration: 00.5, animations: {
+//                            
+//                            self.linkImageView.center.y = 350
+//                            
+//                        }) { (Bool) in
+//                            
+//                            UIView.animate(withDuration: 00.55, animations: {
+//                                
+//                                self.videoImageView.center.y = 350
+//                                
+//                            })
+//                        
+//                        }
+//                    
+//                    }
+//                    
+//                }
+//                
+//            }
+//        
+//        }
 
     }
         
