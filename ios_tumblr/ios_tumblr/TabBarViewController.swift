@@ -12,6 +12,7 @@ class TabBarViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var buttons: [UIButton]!
+    @IBOutlet weak var composeButton: UIButton!
     
     var homeViewController: UIViewController!
     var searchViewController: UIViewController!
@@ -28,7 +29,6 @@ class TabBarViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Create a reference to the the appropriate storyboard
-        // let main = UIStoryboard(name: "Main", bundle: nil)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // Instantiate each ViewController
@@ -47,8 +47,10 @@ class TabBarViewController: UIViewController {
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
 
@@ -86,10 +88,18 @@ class TabBarViewController: UIViewController {
         
         // Call the viewDidAppear method of the ViewController you are adding using didMove(toParentViewController: self).
         vc.didMove(toParentViewController: self)
+
+    }
+    
+    
+    @IBAction func didPressCompose(_ sender: UIButton) {
+        
         
         
     }
     
+    
+
     
     /*
     // MARK: - Navigation

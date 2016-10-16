@@ -41,15 +41,6 @@
                                             <action selector="didPressTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qvl-B9-E7e"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Umf-CG-8rL">
-                                        <frame key="frameInset" minX="162" minY="4" width="50" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="compose_button"/>
-                                        <state key="selected" image="search_selected_icon"/>
-                                        <connections>
-                                            <action selector="didPressTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYw-SQ-vgF"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rx4-M3-XL4">
                                         <frame key="frameInset" minX="252" minY="5" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,6 +59,18 @@
                                             <action selector="didPressTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KL5-24-66E"/>
                                         </connections>
                                     </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="compose_button" id="3dq-QO-3dh">
+                                        <frame key="frameInset" minX="162" minY="5" width="50" height="35"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9RZ-LR-u0L">
+                                        <frame key="frameInset" minX="162" minY="5" width="50" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="didPressCompose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lhf-3k-oOd"/>
+                                            <segue destination="651-hy-Fwb" kind="modal" animates="NO" id="nqF-t6-qDa"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20184576511383057" green="0.2574094831943512" blue="0.33636218309402466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -75,6 +78,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="composeButton" destination="9RZ-LR-u0L" id="yG1-tw-ybj"/>
                         <outlet property="contentView" destination="5Np-lg-Tzm" id="hni-3o-HWJ"/>
                         <outletCollection property="buttons" destination="ZWb-pT-HAm" collectionClass="NSMutableArray" id="QhQ-tI-BTR"/>
                         <outletCollection property="buttons" destination="RIi-l8-A6o" collectionClass="NSMutableArray" id="TDu-Yc-chh"/>
@@ -137,12 +141,12 @@
         <!--Compose View Controller-->
         <scene sceneID="Bga-Vq-LQI">
             <objects>
-                <viewController storyboardIdentifier="ComposeViewController" id="651-hy-Fwb" customClass="ComposeViewController" customModule="ios_tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ComposeViewController" modalPresentationStyle="overCurrentContext" id="651-hy-Fwb" customClass="ComposeViewController" customModule="ios_tumblr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qLu-Dv-efk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.80000001192092896" contentMode="scaleToFill" id="i9R-rb-57m">
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" id="i9R-rb-57m">
                                 <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20184576509999999" green="0.25740948320000001" blue="0.33636218309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -177,9 +181,21 @@
                                 <state key="normal" backgroundImage="nevermind">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressNevermind:" destination="651-hy-Fwb" eventType="touchUpInside" id="d8g-8G-8iB"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="chatImageView" destination="Z7X-v3-Zwh" id="Ndo-Ts-9NK"/>
+                        <outlet property="linkImageView" destination="4Yy-e6-N4n" id="vvU-Qv-II4"/>
+                        <outlet property="nevermindButton" destination="dfR-BF-sGE" id="bXq-Lp-Hwa"/>
+                        <outlet property="photoImageView" destination="y5d-P6-r4m" id="ZdL-WW-v3t"/>
+                        <outlet property="quoteImageView" destination="XaN-LW-Nan" id="KEK-gS-Gw6"/>
+                        <outlet property="textImageView" destination="ZaE-v0-DBG" id="4fU-ae-17r"/>
+                        <outlet property="videoImageView" destination="6WK-jP-RYV" id="RVw-5l-yhH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCA-eJ-zIN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
