@@ -533,6 +533,7 @@
 				CD07C6551DB2C4C200765DB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD07C6561DB2C4C200765DB9 /* Build configuration list for PBXNativeTarget "ios_tumblrTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +542,7 @@
 				CD07C6581DB2C4C200765DB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD07C6591DB2C4C200765DB9 /* Build configuration list for PBXNativeTarget "ios_tumblrUITests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +551,7 @@
 				CD07C65B1DB2C4C200765DB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

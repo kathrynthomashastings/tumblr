@@ -10,6 +10,7 @@ import UIKit
 
 class ComposeViewController: UIViewController {
 
+    @IBOutlet weak var composeBgView: UIView!
     @IBOutlet weak var nevermindButton: UIButton!
     @IBOutlet weak var textImageView: UIImageView!
     @IBOutlet weak var photoImageView: UIImageView!
@@ -24,6 +25,10 @@ class ComposeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        UIView.animate(withDuration: 00.3, animations: {
+            self.composeBgView.alpha = 00.9
+        })
         
     }
 
